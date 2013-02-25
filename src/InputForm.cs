@@ -33,58 +33,55 @@ namespace Solvator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Separar los números en un array
+            string[] tFirstToken = text1.Text.Split(' ');
+            string[] tSecondToken = text2.Text.Split(' ');
+            int[] firstToken = Array.ConvertAll<string, int>(tFirstToken, int.Parse);
+            int[] secondToken = Array.ConvertAll<string, int>(tSecondToken, int.Parse);
+
+            // String con el resultado
+            string resultado;
             switch (this.tipo)
             {
                 case 1:
                     // F = I - V
-                    // Separamos los números en un array
-                    string[] titokens = text1.Text.Split(' ');
-                    string[] tvtokens = text2.Text.Split(' ');
-                    int[] itokens = Array.ConvertAll<string, int>(titokens, int.Parse);
-                    int[] vtokens = Array.ConvertAll<string, int>(tvtokens, int.Parse);
-
                     // Sumamos las coordenadas
-                    int coord1 = itokens[0] + vtokens[0];
-                    int coord2 = itokens[1] + vtokens[1];
+                    int coord1 = firstToken[0] + secondToken[0];
+                    int coord2 = firstToken[1] + secondToken[1];
 
                     // Damos el resultado
-                    MessageBox.Show("Coordenadas del punto final: B(" + coord1 + "," + coord2 + ")");
-                    this.Close();
-                    
+                    resultado = "Coordenadas del punto final: B(" + coord1 + "," + coord2 + ")";                    
                     break;
+
                 case 2:
                     // I = F - V
-                    // Separamos los números en un array
-                    string[] ttokensFinal = text1.Text.Split(' ');
-                    string[] ttokensVector = text2.Text.Split(' ');
-                    int[] tokensFinal = Array.ConvertAll<string, int>(ttokensFinal, int.Parse);
-                    int[] tokensVector = Array.ConvertAll<string, int>(ttokensVector, int.Parse);
-
                     // Sumamos las coordenadas
-                    int c1 = tokensFinal[0] - tokensVector[0];
-                    int c2 = tokensFinal[1] - tokensVector[1];
+                    int c1 = firstToken[0] - secondToken[0];
+                    int c2 = firstToken[1] - secondToken[1];
 
                     // Damos el resultado
-                    MessageBox.Show("Coordenadas del punto inicial: A(" + c1 + "," + c2 + ")");
-                    this.Close();
+                    resultado = "Coordenadas del punto inicial: A(" + c1 + "," + c2 + ")";
                     break;
+
                 case 3:
                     // V = F - I
-                    // Separamos los números en un array
-                    string[] ttFinal = text1.Text.Split(' ');
-                    string[] ttInicial = text2.Text.Split(' ');
-                    int[] tFinal = Array.ConvertAll<string, int>(ttFinal, int.Parse);
-                    int[] tInicial = Array.ConvertAll<string, int>(ttInicial, int.Parse);
-
                     // Sumamos las coordenadas
-                    int co1 = tFinal[0] - tInicial[0];
-                    int co2 = tFinal[1] - tInicial[1];
+                    int co1 = firstToken[0] - secondToken[0];
+                    int co2 = firstToken[1] - secondToken[1];
 
                     // Damos el resultado
-                    MessageBox.Show("Componentes del vector: u = (" + co1 + "," + co2 + ")");
-                    this.Close();
+                    resultado = "Componentes del vector: u = (" + co1 + "," + co2 + ")";
                     break;
+                default:
+                    resultado = "Hubo un error al procesar el problema. Puedes reportar un bug en https://github.com/unrar/solvator/issues. " + 
+                        "Código de error: UNKOWN-PROBLEM-NUMBER.";
+                    break;
+
             }
+
+            MessageBox.Show(resultado);
+            // Cerramos el InputForm
+            this.Close();
 
         }
     }
