@@ -1,0 +1,10 @@
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\bin\Debug\Solvator.exe.config
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\bin\Debug\Solvator.exe
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\bin\Debug\Solvator.pdb
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.Form1.resources
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.Properties.Resources.resources
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.csproj.GenerateResource.Cache
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.exe
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.pdb
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.InputForm.resources
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Debug\Solvator.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\bin\Release\Solvator.exe.config
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\bin\Release\Solvator.exe
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\bin\Release\Solvator.pdb
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Release\Solvator.Form1.resources
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Release\Solvator.InputForm.resources
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Release\Solvator.Properties.Resources.resources
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Release\Solvator.csproj.GenerateResource.Cache
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Release\Solvator.exe
+c:\users\tomeu\documents\visual studio 2012\Projects\Solvator\Solvator\obj\Release\Solvator.pdb
